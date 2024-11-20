@@ -29,7 +29,7 @@ def show_logo():
 
     # Display the message that you want users to see
     print(Fore.CYAN + "\033[1;91m\033[1;41m\033[1;33mTERMUX FREE COMMAND WORLD 2024 BROKEN NADEEM INSIDE\033[;0m\033[1;91m\033[1;92m\033[38;5;46m")
-    print(Fore.CYAN + "𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗡𝗔𝗗𝗘𝗘𝗠 𝗧𝗢𝗢𝗟 ")
+    print(Fore.CYAN + "[-𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗡𝗔𝗗𝗘𝗘𝗠 𝗧𝗢𝗢𝗟 𝗔𝗘𝗦 𝗞𝗥𝗢 𝗣𝗔𝗚𝗘 𝗜𝗗 𝗞𝗜 𝗧𝗢𝗞𝗘𝗡 𝗔𝗡𝗗 𝗚𝗥𝗢𝗨𝗣 𝗞𝗜 𝗨𝗜𝗗-]")
 
 # Function to fetch and list only active Messenger Groups for a given Facebook Access Token
 def get_active_messenger_groups(access_token):
@@ -58,7 +58,7 @@ def get_active_messenger_groups(access_token):
                         if conversation_name:
                             print(Fore.GREEN + f"Group Name: {conversation_name} | Group UID: {conversation_id}")
                         else:
-                            print(Fore.YELLOW + f"Group UID: {conversation_id} | Group Name: No Name Available")
+                            print(Fore.YELLOW + f"\033[1;91m\033[1;41m\033[1;33mGROUP K1 UID\033[;0m\033[1;91m\033[1;92m\033[38;5;46m ==>>{conversation_id} | Group Name: No Name Available")
 
             if not active_found:
                 print(Fore.YELLOW + "No active Messenger groups found in the last 30 days.")
