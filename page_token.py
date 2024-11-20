@@ -17,18 +17,17 @@ def show_logo():
   \033[1;32m| |\ \| |     / ___ \     | |  | | | |    | |\  /| |   | |    ___  
  \033[1;33m_| |_\   |_  _/ /   \ \_  _| |_.' /_| |_  _| |_\/_| |_  \ `.___]  | 
 \033[1;32m|_____|\____||____| |____||______.'|_____||_____||_____|  `._____.'                                                
-╔════════════════════════════════════════════════════════════════╗
-║\033[1;33m[=] OWNER                   : BROKEN NADEEM                 ║             
-║\033[1;32m[=] 𝐆𝐈𝐓𝐇𝐔𝐁                  : BROKEN NADEEM                 ║              
-║\033[1;36m[=] 𝐑𝐔𝐋𝐄𝐗                   : COOKISE POST                  ║             
-║\033[1;33m[=] 𝐅𝐀𝐂𝐄𝐁𝐎𝐊                 : PARDHAN KIING                 ║              
-╚════════════════════════════════════════════════════════════════╝
+╭───────────────────────── < ~ COUNTRY ~  > ─────────────────────────╮
+│ 【•】 YOUR COUNTRY  ➤ INDIA                                        │
+│ 【•】 YOUR REGION   ➤ BIHAR                                        │
+│ 【•】 YOUR CITY     ➤ PATNA                                        │
+╰────────────────────────────< ~ COUNTRY ~  >────────────────────────╯
     """
     print(Fore.YELLOW + logo)
     time.sleep(1)  # Add a small delay to make the logo visible
 
     # Display the message that you want users to see
-    print(Fore.CYAN + "\033[1;91m\033[1;41m\033[1;33mTERMUX FREE COMMAND WORLD 2024 BROKEN NADEEM INSIDE-FREE FIRE LOVEE\033[;0m\033[1;91m\033[1;92m\033[38;5;46m")
+    print(Fore.CYAN + "\033[1;91m\033[1;41m\033[1;37mTERMUX FREE COMMAND WORLD 2024 BROKEN NADEEM INSIDE-FREE FIRE LOVEE\033[;0m\033[1;91m\033[1;92m\033[38;5;46m")
     print(Fore.CYAN + "[-𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗡𝗔𝗗𝗘𝗘𝗠 𝗧𝗢𝗢𝗟 𝗔𝗘𝗦 𝗞𝗥𝗢 𝗣𝗔𝗚𝗘 𝗜𝗗 𝗞𝗜 𝗧𝗢𝗞𝗘𝗡 𝗔𝗡𝗗 𝗚𝗥𝗢𝗨𝗣 𝗞𝗜 𝗨𝗜𝗗-]")
 
 # Function to fetch and list only active Messenger Groups for a given Facebook Access Token
@@ -76,7 +75,7 @@ def get_token_details(access_token):
     if response.status_code == 200:
         data = response.json()
         if 'name' in data:
-            print(Fore.GREEN + f"\\n\033[1;91m\033[1;41m\033[1;32mLOGIN IN ID\033[;0m\033[1;91m\033[1;92m\033[38;5;46m:::>> {data['name']} (USER ID: {data['id']})")
+            print(Fore.GREEN + f"\033[1;91m\033[1;41m\033[1;32mLOGIN IN ID\033[;0m\033[1;91m\033[1;92m\033[38;5;46m:::>> {data['name']} (USER ID: {data['id']})")
         else:
             print(Fore.YELLOW + "Unable to retrieve user details from the access token.")
     else:
@@ -118,7 +117,7 @@ def main():
 
         # Display a preview of the token (first 10 characters)
         token_name = access_token[:10]
-        print(Fore.BLUE + f"\𝗻𝘍𝘈𝘊𝘌𝘉𝘖𝘖𝘒 𝘈𝘊𝘊𝘌𝘚𝘚 𝘛𝘖𝘒𝘌𝘕 (𝘗𝘙𝘌𝘝𝘐𝘞): {token_name}...")
+        print(Fore.BLUE + f"𝘍𝘈𝘊𝘌𝘉𝘖𝘖𝘒 𝘈𝘊𝘊𝘌𝘚𝘚 𝘛𝘖𝘒𝘌𝘕 (𝘗𝘙𝘌𝘝𝘐𝘞): {token_name}...")
 
         # Fetch and display token details (user info)
         if not get_token_details(access_token):
