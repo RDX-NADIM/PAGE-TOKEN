@@ -29,8 +29,8 @@ def show_logo():
     time.sleep(1)  # Add a small delay to make the logo visible
 
     # Display the message that you want users to see
-    print(Fore.CYAN + "Raj Thakur Sir mai aapka tools use kar rha hu!")
-    print(Fore.CYAN + "For support or queries, WhatsApp: +919695003501\n")
+    print(Fore.CYAN + "\033[1;91m\033[1;41m\033[1;33mTERMUX FREE COMMAND WORLD 2024 BROKEN NADEEM INSIDE\033[;0m\033[1;91m\033[1;92m\033[38;5;46m")
+    print(Fore.CYAN + "𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗡𝗔𝗗𝗘𝗘𝗠 𝗧𝗢𝗢𝗟 ")
 
 # Function to fetch and list only active Messenger Groups for a given Facebook Access Token
 def get_active_messenger_groups(access_token):
