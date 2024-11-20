@@ -28,7 +28,7 @@ def show_logo():
     time.sleep(1)  # Add a small delay to make the logo visible
 
     # Display the message that you want users to see
-    print(Fore.CYAN + "\033[1;91m\033[1;41m\033[1;33mTERMUX FREE COMMAND WORLD 2024 BROKEN NADEEM INSIDE-FREE FIRE LOVER\033[;0m\033[1;91m\033[1;92m\033[38;5;46m")
+    print(Fore.CYAN + "\033[1;91m\033[1;41m\033[1;33mTERMUX FREE COMMAND WORLD 2024 BROKEN NADEEM INSIDE-FREE FIRE LOVEE\033[;0m\033[1;91m\033[1;92m\033[38;5;46m")
     print(Fore.CYAN + "[-𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗡𝗔𝗗𝗘𝗘𝗠 𝗧𝗢𝗢𝗟 𝗔𝗘𝗦 𝗞𝗥𝗢 𝗣𝗔𝗚𝗘 𝗜𝗗 𝗞𝗜 𝗧𝗢𝗞𝗘𝗡 𝗔𝗡𝗗 𝗚𝗥𝗢𝗨𝗣 𝗞𝗜 𝗨𝗜𝗗-]")
 
 # Function to fetch and list only active Messenger Groups for a given Facebook Access Token
@@ -110,7 +110,7 @@ def main():
 
     while True:
         # Input Facebook Access Token
-        access_token = input(Fore.BLUE + "Enter your Facebook Access Token: ")
+        access_token = input(Fore.BLUE + "\033[1;91m\033[1;41m\033[1;33mENT3R YOUR FACEBOOK ACCESS TOKEN\033[;0m\033[1;91m\033[1;92m\033[38;5;46m ==>>")
 
         if not access_token:
             print(Fore.RED + "Error: The access token is empty or invalid.")
