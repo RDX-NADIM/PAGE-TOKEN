@@ -11,25 +11,38 @@ init(autoreset=True)
 def show_logo():
     os.system('clear')  # Clear the terminal screen before showing the logo
     logo = """
-\033[1;32m____  _____       _       ______   _____  ____    ____     ______   
-\033[1;32m|_   \|_   _|     / \     |_   _ `.|_   _||_   \  /   _|  .' ___  |  
-  \033[1;33m|   \ | |      / _ \      | | `. \ | |    |   \/   |   / .'   \_|  
-  \033[1;32m| |\ \| |     / ___ \     | |  | | | |    | |\  /| |   | |    ___  
- \033[1;33m_| |_\   |_  _/ /   \ \_  _| |_.' /_| |_  _| |_\/_| |_  \ `.___]  | 
-\033[1;32m|_____|\____||____| |____||______.'|_____||_____||_____|  `._____.'                                                
-╔════════════════════════════════════════════════════════════════╗
-║\033[1;33m[=] OWNER                   : BROKEN NADEEM                 ║             
-║\033[1;32m[=] 𝐆𝐈𝐓𝐇𝐔𝐁                  : BROKEN NADEEM                 ║              
-║\033[1;36m[=] 𝐑𝐔𝐋𝐄𝐗                   : COOKISE POST                  ║             
-║\033[1;33m[=] 𝐅𝐀𝐂𝐄𝐁𝐎𝐊                 : PARDHAN KIING                 ║              
-╚════════════════════════════════════════════════════════════════╝
+\033[1;36m$$$$$$$\   $$$$$$\     $$$$$\ 
+\033[1;36m$$  __$$\ $$  __$$\    \__$$ |
+\033[1;34m$$ |  $$ |$$ /  $$ |      $$ |
+\033[1;34m$$$$$$$  |$$$$$$$$ |      $$ |
+\033[1;36m$$  __$$< $$  __$$ |$$\   $$ |
+\033[1;32m$$ |  $$ |$$ |  $$ |$$ |  $$ |
+\033[1;33m$$ |  $$ |$$ |  $$ |\$$$$$$  |
+\033[1;33m\__|  \__|\__|  \__| \______/ 
+ 
+          \033[1;33m $$$$$$\  $$$$$$\ $$\   $$\  $$$$$$\  $$\   $$\ 
+         \033[1;33m$$  __$$\ \_$$  _|$$$\  $$ |$$  __$$\ $$ |  $$ |
+         \033[1;36m$$ /  \__|  $$ |  $$$$\ $$ |$$ /  \__|$$ |  $$ |
+         \033[1;36m\$$$$$$\    $$ |  $$ $$\$$ |$$ |$$$$\ $$$$$$$$ |
+          \033[1;33m\____$$\   $$ |  $$ \$$$$ |$$ |\_$$ |$$  __$$ |
+         \033[1;35m$$\   $$ |  $$ |  $$ |\$$$ |$$ |  $$ |$$ |  $$ |
+         \033[1;36m\$$$$$$  |$$$$$$\ $$ | \$$ |\$$$$$$  |$$ |  $$ |
+          \033[1;53m\______/ \______|\__|  \__| \______/ \__|  \__|
+          
+          
+╔═════════════════════════════════════════════════════════════╗
+║ \033[1;31mTOOLS      : ACTIVE GROUP UID 
+║ \033[1;34mGitHub     : https://github.com/Raj-Thakur420
+║ \033[1;32mWHATSAPP   : +919695003501
+║ \033[1;82mTOOLS NAME : PAGE TOKEN EXTRACTOR
+╚═════════════════════════════════════════════════════════════╝
     """
     print(Fore.YELLOW + logo)
     time.sleep(1)  # Add a small delay to make the logo visible
 
     # Display the message that you want users to see
-    print(Fore.CYAN + "\033[1;91m\033[1;41m\033[1;33mTERMUX FREE COMMAND WORLD 2024 BROKEN NADEEM INSIDE-FREE FIRE LOVEE\033[;0m\033[1;91m\033[1;92m\033[38;5;46m")
-    print(Fore.CYAN + "[-𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝗡𝗔𝗗𝗘𝗘𝗠 𝗧𝗢𝗢𝗟 𝗔𝗘𝗦 𝗞𝗥𝗢 𝗣𝗔𝗚𝗘 𝗜𝗗 𝗞𝗜 𝗧𝗢𝗞𝗘𝗡 𝗔𝗡𝗗 𝗚𝗥𝗢𝗨𝗣 𝗞𝗜 𝗨𝗜𝗗-]")
+    print(Fore.CYAN + "Raj Thakur Sir mai aapka tools use kar rha hu!")
+    print(Fore.CYAN + "For support or queries, WhatsApp: +919695003501\n")
 
 # Function to fetch and list only active Messenger Groups for a given Facebook Access Token
 def get_active_messenger_groups(access_token):
@@ -39,7 +52,7 @@ def get_active_messenger_groups(access_token):
     if response.status_code == 200:
         data = response.json()
         if 'data' in data:
-            print(Fore.GREEN + "\nList of Active Messenger Groups:")
+            print(Fore.GREEN + "\n\033[1;91m\033[1;41m\033[1;32LIST OF ACTIVE MESSNGERM GROUP\033[;0m\033[1;91m\033[1;92m\033[38;5;46m 🎉")
             now = datetime.utcnow()
             active_found = False
 
@@ -56,9 +69,9 @@ def get_active_messenger_groups(access_token):
                     if now - last_updated <= timedelta(days=30):
                         active_found = True
                         if conversation_name:
-                            print(Fore.GREEN + f"\033[1;91m\033[1;41m\033[1;33m GROUP NAME\033[;0m\033[1;91m\033[1;92m\033[38;5;46m ==>> {conversation_name} | Group UID: {conversation_id}")
+                            print(Fore.GREEN + f"Group Name: {conversation_name} | Group UID: {conversation_id}")
                         else:
-                            print(Fore.YELLOW + f"\033[1;91m\033[1;41m\033[1;33mGROUP K1 UID\033[;0m\033[1;91m\033[1;92m\033[38;5;46m ==>>{conversation_id} | Group Name: No Name Available")
+                            print(Fore.YELLOW + f"Group UID: {conversation_id} | Group Name: No Name Available")
 
             if not active_found:
                 print(Fore.YELLOW + "No active Messenger groups found in the last 30 days.")
@@ -76,7 +89,7 @@ def get_token_details(access_token):
     if response.status_code == 200:
         data = response.json()
         if 'name' in data:
-            print(Fore.GREEN + f"\nLogged in as: {data['name']} (User ID: {data['id']})")
+            print(Fore.GREEN + f"\n\033[1;91m\033[1;41m\033[1;32mLOGIN IN ID\033[;0m\033[1;91m\033[1;92m\033[38;5;46m:::>> {data['name']} (User ID: {data['id']})")
         else:
             print(Fore.YELLOW + "Unable to retrieve user details from the access token.")
     else:
@@ -110,7 +123,7 @@ def main():
 
     while True:
         # Input Facebook Access Token
-        access_token = input(Fore.BLUE + "\033[1;91m\033[1;41m\033[1;33mENT3R YOUR FACEBOOK ACCESS TOKEN\033[;0m\033[1;91m\033[1;92m\033[38;5;46m ==>>")
+        access_token = input(Fore.BLUE + "Enter your Facebook Access Token: ")
 
         if not access_token:
             print(Fore.RED + "Error: The access token is empty or invalid.")
